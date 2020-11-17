@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+@import  url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap" rel="stylesheet");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: wheat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*-- Welcome Font --*/
+
+.welcome{
+    font-family: 'Averia Sans Libre', cursive;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    line-height: 6em;
+    color: #8b6d31d0;
+}
+.welcome h1{
+    font-size: 50px;
+    font-weight: lighter;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.welcome h3{
+    font-weight: bold;
+    font-size: 100px ;
 }
 
-.App-link {
-  color: #61dafb;
+/*-- Navigation Bar --*/
+
+.navButtons{
+    position: sticky;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navDisplay ul {
+    list-style: none;
+    float: left;
+}
+
+.navDisplay li{
+    display: inline-block;
+    padding: 10px 10px
+}
+
+.navDisplay a{
+    list-style: none;
+    font-family: 'Averia Sans Libre', cursive;
+    padding: 10px 20px;
+    margin: 15px;
+    color: #131111;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/*-- BackGround Image --*/
+
+.HomePage{
+    background-image: linear-gradient(rgba(46, 40, 40, 0.5), rgba(46, 39, 39, 0.5)), url('/images/747.jpg');
+    height: 60em;
+    min-width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    opacity: 85%;
+}
+
+/*-- About Section --*/
+
+.about{
+    max-width: 70%;
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    margin-left: 15%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+    /* title divisions*/
+.titles{
+    font-size: 80px;
+    font-weight: 200;
+    padding: 10px 0 20px 0;
+}
+
+/* Professional Experience */
+
+.experience{
+    display: inline-block;
+    position: relative;
+    margin-left: 15%;
+    overflow: hidden;
+    max-width: 70%;
+    justify-content: center;
+}
+
+.experience p{
+    padding-bottom: 20px;
+}
+
+/* Education Section */
+
+.education{
+    display: inline-block;
+    position: relative;
+    max-width: 70%;
+    margin-left: 15%;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
